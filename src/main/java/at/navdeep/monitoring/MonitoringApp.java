@@ -16,6 +16,10 @@ public class MonitoringApp {
         System.out.println("\n--- Letzte Fehler aus Log ---");
         LogAnalyzer.printLastErrors("testlog.txt", 10); // Alternativ: "/var/log/syslog"
 
+        if (System.getProperty("os.name").toLowerCase().contains("win")) {
+            System.out.println("⚠️ Einige Features funktionieren nur unter Linux.");
+        }
+
         String[] dummyErrors = { "ERROR 1", "ERROR 2", "ERROR 3" };
         JsonExporter.exportToJson("report.json", false, false, dummyErrors);
     }
