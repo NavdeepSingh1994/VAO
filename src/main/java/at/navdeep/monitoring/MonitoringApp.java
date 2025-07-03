@@ -15,5 +15,8 @@ public class MonitoringApp {
 
         System.out.println("\n--- Letzte Fehler aus Log ---");
         LogAnalyzer.printLastErrors("testlog.txt", 10); // Alternativ: "/var/log/syslog"
+
+        String[] dummyErrors = { "ERROR 1", "ERROR 2", "ERROR 3" };
+        JsonExporter.exportToJson("report.json", false, false, dummyErrors);
     }
 }
