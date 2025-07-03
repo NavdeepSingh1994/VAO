@@ -30,7 +30,7 @@ Kleines Monitoring-Tool in Java zur Systemprüfung – ideal für Linux/CI/CD-Um
   Rolle:
   Projektleitung – inklusive Schulung, Koordination, Wissenstransfer
 
-# Warum Projektmanager:in im Bereich von IT und Softwareentwicklung?<br/>
+# Warum ITOPS / APPLICATION MANAGER?<br/>
 
 Ich habe beim 1st Level angefangen und arbeite aktuell im 3rd Level Bereich, dazu habe ich Major Incidents behandelt<br/>
 während meiner Senior Incident Manager Position, ich denke diese Position erlaubt mir etwas zu bewegen wenn es Schwachstellen im Prozess gibt.
