@@ -10,12 +10,6 @@ Kleines Monitoring-Tool in Java zur Systemprüfung – ideal für Linux/CI/CD-Um
 - Logfile-Analyse (Fehlermeldungen)
 - Export der Ergebnisse als JSON
 
-## Quickstart
-
-```bash
-mvn clean install
-java -cp target/monitoring-tool-1.0-SNAPSHOT.jar at.navdeep.monitoring.MonitoringApp
-
 # Abschluss Bachelorstudium<br/>
   Offene Bachelorprüfung: 29.09 - 04.10.25<br/>
   Abschluss: B.Sc. in Computer Science and Digital Communication<br/>
