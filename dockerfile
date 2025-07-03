@@ -1,3 +1,3 @@
 FROM openjdk:17
-COPY target/monitoring-tool-1.0-SNAPSHOT.jar app.jar
+COPY out/artifacts/monitoring_tool_jar/monitoring-tool.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]

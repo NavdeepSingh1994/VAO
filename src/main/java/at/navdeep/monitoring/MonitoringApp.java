@@ -1,4 +1,6 @@
 package at.navdeep.monitoring;
+import java.io.File;
+import java.util.Arrays;
 
 public class MonitoringApp {
     public static void main(String[] args) {
@@ -14,7 +16,8 @@ public class MonitoringApp {
         System.out.println(DatabaseChecker.isPostgreSQLAvailable("localhost", 5432));
 
         System.out.println("\n--- Letzte Fehler aus Log ---");
-        LogAnalyzer.printLastErrors("testlog.txt", 10); // Alternativ: "/var/log/syslog"
+        String[] errors = LogAnalyzer.readLastErrors("testlog.txt", 10);
+        Arrays.stream(errors).forEach(System.out::println);
 
         if (System.getProperty("os.name").toLowerCase().contains("win")) {
             System.out.println("⚠️ Einige Features funktionieren nur unter Linux.");
